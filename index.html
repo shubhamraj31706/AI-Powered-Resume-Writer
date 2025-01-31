@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Resume Writer</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js"></script>
+
+</head>
+<body>
+
+    <!-- Login/Signup Form -->
+    <div id="auth-container">
+        <div class="auth-box">
+            <h2 id="auth-title">Login</h2>
+            <input type="email" id="auth-email" placeholder="Enter your email" required>
+            <input type="password" id="auth-password" placeholder="Enter your password" required>
+            <button id="auth-button">Login</button>
+            <p id="toggle-auth">Don't have an account? <span>Sign Up</span></p>
+        </div>
+    </div>
+
+    <!-- Main Content (Initially Hidden) -->
+    <div id="main-content" class="hidden">
+        
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="logo">AI Resume Writer</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#resume-input">Generate</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="logout-btn">Logout</button></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <header id="home">
+            <h1>AI-Powered Resume Writer</h1>
+            <p>Generate professional resumes instantly with AI.</p>
+            <a href="#resume-input" class="btn">Get Started</a>
+        </header>
+
+        <!-- Features Section -->
+        <section id="features">
+            <h2>Why Choose Our AI Resume Writer?</h2>
+            <div class="features-container">
+                <div class="feature">
+                    <h3>Instant Generation</h3>
+                    <p>Get a well-structured resume in seconds.</p>
+                </div>
+                <div class="feature">
+                    <h3>Customizable</h3>
+                    <p>Modify and tailor your resume easily.</p>
+                </div>
+                <div class="feature">
+                    <h3>Download & Export</h3>
+                    <p>Export your resume as PDF or Word.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Input Section -->
+        <section id="resume-input">
+            <h2>Create Your Resume</h2>
+            <form id="resume-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="resume-email" required>
+
+                <label for="experience">Work Experience:</label>
+                <textarea id="experience" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Generate Resume</button>
+            </form>
+        </section>
+
+        <!-- AI Resume Output Section -->
+        <section id="resume-output">
+            <h2>Generated Resume</h2>
+            <div id="resume-preview">
+                <p>Enter details and click "Generate Resume" to see output here.</p>
+            </div>
+            <button class="btn" id="download-btn">Download Resume</button>
+        </section>
+
+        <!-- Contact Section -->
+        <footer id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@airesumewriter.com</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

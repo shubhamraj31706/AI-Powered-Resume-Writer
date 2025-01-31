@@ -1,0 +1,212 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Hide main content initially */
+.hidden {
+    display: none;
+}
+
+/* Login/Signup Container */
+#auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #007bff;
+}
+
+.auth-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auth-box input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.auth-box button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.auth-box button:hover {
+    background: #0056b3;
+}
+
+#toggle-auth {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#toggle-auth span {
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+nav {
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 1px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a, nav ul li button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Other styles remain the same */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+/* Navigation Bar */
+nav {
+    background: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 2px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: #007bff;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #0056b3;
+    color: white;
+}
+
+/* Features Section */
+#features {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.features-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.feature {
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+}
+
+/* Resume Input Section */
+#resume-input {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Resume Output */
+#resume-output {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#resume-preview {
+    background: white;
+    padding: 20px;
+    min-height: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #343a40;
+    color: white;
+}
